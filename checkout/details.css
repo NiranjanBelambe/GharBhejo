@@ -1,0 +1,77 @@
+#header{
+    padding: 3%;
+    font-size: 1.9rem;
+}
+
+.details{
+    float: left;
+    font-size: 1.2rem;
+    padding: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 8%;
+}
+
+#text{
+    margin: auto;
+    margin-top: 3%;
+}
+
+#text tr td{
+    margin-top: 4%;
+}
+
+.button1{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.button2{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+#edit, #next{
+    margin: auto;
+    font-size: 1.2rem;
+    display:block;
+    padding:0.3em 1.2em;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+    color:whitesmoke;
+    text-align:center;
+}
+
+#edit{
+    border:0.16em solid blue;
+    background-color: blue;
+}
+
+#next{
+    border:0.16em solid rgb(3, 185, 3);
+    background-color: rgb(3, 185, 3);
+}
+
+#edit:hover, #next:hover{
+    opacity: 0.7;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

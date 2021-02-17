@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GharBhejo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+            <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+            <li><a href="signup/signup.html" class="nav_item" id="signup_btn">SIGN UP</a></li>
+            <li id="signout_btn" style="display: none;"><a onclick="signout()" class="nav_item">SIGN OUT</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="banner">
+            <h1>
+                <span class="txt-rotate" data-period="2000" data-rotate='[ "Where India comes to shop" ]'></span>
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="ad">
+                    <h1>Check out the all-new iPhone 11 Pro Max.</h1>
+                    <a href="Products/1_Apple.html">Get yours now</a>
+                </div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="ad">
+                    <h1>Worshipped by gamers. Loved by techgurus.</h1>
+                    <a href="Products/4_Asus.html">Buy the ASUS gaming laptop.</a>
+                </div>
+            </div>
+            
+        </div>
+            <br>
+            
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </section>
+    <section id="categories">
+        <div class="categories_title">
+            <h1>Explore Different Categories</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <a href="categories/Smartphones.html" class="category">
+                        <img src="https://techcrunch.com/wp-content/uploads/2019/08/smartphone-composite-getty-images-Neil-Godwin.jpg?w=730&crop=1" style="width: 100%;"><br>Smartphones
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="categories/HomeAppliances.html" class="category">
+                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BBUbmmz.img?h=351&w=624&m=6&q=60&o=f&l=f&x=676&y=390" style="width: 100%;"><br>Home Appliances
+                    </a>
+                </div>
+                <div class="column">
+                    <a href="categories/Laptops.html" class="category">
+                        <img src="https://www8.hp.com/us/en/images/HP_BL2_Laptops_Desktops_Essential_03_tcm245_2454631_tcm245_2454780_tcm245-2454631.jpg" style="width: 100%;"><br>Laptops and PCs
+                    </a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Get to Know Us</li>
+                        <li><a id="footer1_links" href="#">About</a></li>
+                        <li><a id="footer1_links" href="#">Careers</a></li>
+                        <li><a id="footer1_links" href="#">Press Releases</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Help Centre</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Customer Care</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Return Policy</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Complaint desk</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Socials</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ol>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="back2top">
+        <div class="back2top">
+            <a href="#" class="toplink">
+                Back to top
+            </a>
+        </div>
+    </section>
+    <section id="footer2">
+        <div id="footer2_main">
+            <p>&copy; 2020 Rohit Yelnare, Niranjan Belambe and Aakash Yadav</p> 
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

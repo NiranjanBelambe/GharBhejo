@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>GharBhejo Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout/payment.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+        <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="index.html#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+            <li><a href="signup/signup.html" class="nav_item" id="signup_btn">SIGN UP</a></li>
+            <li id="signout_btn" style="display: none;"><a onclick="signout()" class="nav_item">SIGN OUT</a></li>
+        </ul>
+    </nav>
+    <p id="header">Bill and Payment Options</p><hr>
+    <div id="bill">
+        <table id="iternary"></table>
+        <div id="final">
+            <span>Total</span>
+            <span id="total"></span>
+        </div>
+    </div>
+    <div id="payment">
+        <div class="collapse-content">
+            <div class="collapse" id="Card">
+              <a class="Card" href="checkout/payment.html#Card">Credit or Debit Card</a>
+              <div class="content">
+                <div class="inner-content">
+                    <form id="card" autocomplete="off">
+                        <table style="margin: auto;">
+                            <tr>
+                                <td><p>Enter name of cardholder: </p></td>
+                                <td><input type="text" id="cardholder"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Enter card number:</p></td>
+                                <td><input type="text" id="cardnum" placeholder="XXXX-XXXX-XXXX-XXXX"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Enter card cvv: </p></td>
+                                <td><input type="text" id="cvv" placeholder="###"></td>
+                            </tr>
+                            <tr>
+                                <td><p>Month and Year of Expiry(MM/YY): </p></td>
+                                <td><input type="text" id="expiry" placeholder="e.g. 09/21"></p></td>
+                            </tr>
+                        </table><br>
+                        <input type="button" id="buy" value="Make payment" onclick="makepayment()">
+                    </form>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="Net">
+              <a class="Net" href="checkout/payment.html#Net">Net Banking</a>
+              <div class="content">
+                <div class="inner-content">
+                  <p>Tranfer money to 'GharBhejo India Pvt. Ltd.'</p><br>
+                  <p>Select Bank: 
+                  <select>
+                      <option value="SBI">SBI</option>
+                      <option value="HDFC">HDFC</option>
+                      <option value="IDBI">IDBI</option>
+                      <option value="Kotak Mahindra">Kotak Mahindra</option>
+                  </select>
+                  </p>
+                  <input type="button" id="buy" value="Make payment" onclick="pay()">
+                </div>
+            </div>
+        </div>
+        <div class="collapse" id="UPI">
+            <a class="UPI" href="checkout/payment.html#UPI">Paytm, BHIM UPI or Google Pay</a>
+            <div class="content">
+                <div class="inner-content">
+                    <p>Pay to our UPI ID: <b>@gharbhejoindiasbi</b> or Scan & Pay:</p>
+                    <img src="checkout/dummy.png" style="display:block; margin:auto; width: 20%;">
+                    <input type="button" id="buy" value="Make payment" onclick="pay()">
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="POD">
+              <a class="POD" href="checkout/payment.html#POD">Pay-On-Delivery</a>
+              <div class="content">
+                <div class="inner-content">
+                  <p>This mode of payment has been temporarily suspended. Help us do our bit to reduce key carriers of coronavirus infection and switch to online payment.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+</body>
+<script src="checkout/payment.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,97 @@
+#cartList{
+    font-size: 1.8rem;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+#cartList td{
+    padding: 1.9rem 1rem;
+}
+
+#cartList input{
+    height: 1.5rem;
+    width: 1.5rem;
+    /*checkbox styling*/
+}
+
+#cartList tr:hover{
+    opacity: 0.8;
+    transition: .6s;
+    transform: scale(1);
+    box-shadow:   0 1px 2px rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+
+#rmv_btn{
+    margin: 4%;
+    font-size: 1.2rem;
+    display:unset;
+    padding:0.3em 1.2em;
+    border:0.16em solid rgb(241, 11, 11);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    background-color: red;
+    font-family:'Roboto',sans-serif;
+    color:whitesmoke;
+    text-align:center;
+}
+#rmv_btn:hover{
+    opacity: 0.7;
+}
+
+#header{
+    padding: 3%;
+    font-size: 1.9rem;
+}
+
+#net{
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin-right: 4%;
+    margin-top: 4%;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+#empty-img{
+    display: none;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 400px){
+    #net{
+        display: block;
+        float: none;
+        margin-bottom: 4%;
+    }
+}
+
+#proceed{
+    text-align: center;
+    margin-bottom: 1.4%;
+}
+
+#buy-btn{
+    margin: auto;
+    font-size: 1.2rem;
+    display:block;
+    padding:0.3em 1.2em;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    font-family:'Roboto',sans-serif;
+    color:whitesmoke;
+    text-align:center;
+    border:0.16em solid rgb(3, 185, 3);
+    background-color: rgb(3, 185, 3);
+}
+
+#buy-btn:hover{
+    opacity: 0.7;
+}

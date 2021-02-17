@@ -1,0 +1,107 @@
+<html>
+<head>
+    <base href="../">
+    <link rel="stylesheet" href="signup/signup.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+        <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="index.html#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+    <div id="regform"><h1>SIGN UP</h1></div>
+       <form autocomplete="on">
+           <div id="info">
+           <h2 id="name"> Your Name</h2>
+           <input id="firstname" type="text" name="first_name" placeholder="     Name" required>
+           <label id ="firstlabel"></label><br>
+           </div>
+
+           <h2 id="name" >Your Email </h2>
+           <input id="Email" type="text" placeholder="   Email" name="Email">
+           <span id="message1" style="color: whitesmoke;"></span><br>
+
+           <h2 id="name1">Password</h2>
+           <input id="pass" type="password" name="password" placeholder="   Password">
+           <span id="message2" style="color: whitesmoke;"></span><br>
+
+           <h2 id="name1">Confirm Password</h2>
+           <input id="pass1" type="password" name="password" placeholder="  Confirm Password">
+           <span id="message4" style="color: whitesmoke;"></span><br>
+
+           <h2 id="name1">Mobile No.</h2>
+           <input id="phone" type="number" name="phone_no" placeholder="  Mobile Number">
+           <span id ="message" style="color: whitesmoke;"></span><br>
+
+           <h2 id="name1">Country</h2>
+           <input id="country" type="text" placeholder="    Country"><br>
+           <span id ="message3" style="color: whitesmoke;"></span><br>
+
+           <h2 id="name1">Shipping Address</h2>
+           <input id="add" type="text" required>
+           <label id="add_label">Address line 1</label><br><br><br>
+          
+           <input id="add" class="line2" type="text" >
+           <label id="add_label">Address line 2</label>      <br> <br> 
+           
+          
+           <input id="button" type="button" name="submit" value="Sign Up" onclick="control()"> 
+           
+       </form>
+   </div>
+   <section id="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Get to Know Us</li>
+                        <li><a id="footer1_links" href="#">About</a></li>
+                        <li><a id="footer1_links" href="#">Careers</a></li>
+                        <li><a id="footer1_links" href="#">Press Releases</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Help Centre</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Customer Care</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Return Policy</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Complaint desk</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Socials</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ol>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="back2top">
+        <div class="back2top">
+            <a href="#" class="toplink">
+                Back to top
+            </a>
+        </div>
+    </section>
+    <section id="footer2">
+        <div id="footer2_main">
+            <p>&copy; 2020 Rohit Yelnare, Niranjan Belambe and Aakash Yadav</p> 
+        </div>
+    </section>
+</body>
+    <script src="signup/signup.js"></script>
+</html>

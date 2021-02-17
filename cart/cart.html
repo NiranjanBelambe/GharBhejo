@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GharBhejo Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart/cart.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+        <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="index.html#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+            <li><a href="signup/signup.html" class="nav_item" id="signup_btn">SIGN UP</a></li>
+            <li id="signout_btn" style="display: none;"><a onclick="signout()" class="nav_item">SIGN OUT</a></li>
+        </ul>
+    </nav>
+    <div id="cart">
+        <p id="header"></p>
+        <hr><br>
+        <img id="empty-img" src="data:image/jpeg;base64,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">
+        <table id="cartList"></table>
+        <hr><br>
+        <button onclick="rmv()" id="rmv_btn">Remove</button>
+        <p id="net"></p>
+    </div>
+    <div id="proceed">
+        <button id="buy-btn" onclick="buy()">Proceed to Buy</button>
+    </div>
+    <section id="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Get to Know Us</li>
+                        <li><a id="footer1_links" href="#">About</a></li>
+                        <li><a id="footer1_links" href="#">Careers</a></li>
+                        <li><a id="footer1_links" href="#">Press Releases</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Help Centre</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Customer Care</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Return Policy</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Complaint desk</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Socials</li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a id="footer1_links" href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ol>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="back2top">
+        <div class="back2top">
+            <a href="cart/cart.html#" class="toplink">
+                Back to top
+            </a>
+        </div>
+    </section>
+    <section id="footer2">
+        <div id="footer2_main">
+            <p>&copy; 2020 Rohit Yelnare, Niranjan Belambe and Aakash Yadav</p> 
+        </div>
+    </section>
+    <script src="cart/cart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

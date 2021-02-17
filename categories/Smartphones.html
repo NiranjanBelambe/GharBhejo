@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GharBhejo-Smartphones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="stylesheet" href="categories/category.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+        <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="index.html#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+            <li><a href="signup/signup.html" class="nav_item" id="signup_btn">SIGN UP</a></li>
+            <li id="signout_btn" style="display: none;"><a onclick="signout()" class="nav_item">SIGN OUT</a></li>
+        </ul>
+    </nav>
+    <section id="categories">
+        <div class="categories_title">
+            <h1>Explore Different Smartphones</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column_cat">
+                    <a href="Products/1_Apple.html" class="category">
+                        <img src="https://www.amazon.in/images/I/61jgfLBydjL._SL1024_.jpg" style="height: 40vh;"><br><p>iPhone 11 Pro Max(64GB) - Midnight Green</p>
+                    </a>
+                    <h3 id="price">Rs 1,17,100</h3>
+                    <h4>Get it by Wednesday, May 27<br>
+                        FREE &nbsp; Delivery &nbsp; by &nbsp; GharBhejo</h4>
+                </div>
+                <div class="column_cat">
+                    <a href="Products/2_Samsung.html" class="category">
+                        <img src="https://www.amazon.in/images/I/71SEDVyeNWL._SL1500_.jpg" style="height: 40vh;"><br><p>Samsung Note 10+(Aura Black)</p>
+                    </a>
+                    <h3 id="price">Rs 40,000</h3>
+                    <h4>Get it by Thursday, May 28<br>
+                        FREE &nbsp; Delivery &nbsp; by &nbsp; GharBhejo</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Get to Know Us</li>
+                        <li><a id="footer1_links" href="#">About</a></li>
+                        <li><a id="footer1_links" href="#">Careers</a></li>
+                        <li><a id="footer1_links" href="#">Press Releases</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Help Centre</li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-instagram"></i>Customer Care</a></li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-youtube"></i>Return Policy</a></li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-twitter"></i>Complaint desk</a></li>
+                    </ol>
+                </div>
+                <div class="column">
+                    <ol>
+                        <li style="font-weight: bold; font-size: 1.2rem; padding-bottom: 1rem;">Socials</li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-youtube"></i>Youtube</a></li>
+                        <li><a id="footer1_links" href=""#><i class="fab fa-twitter"></i>Twitter</a></li>
+                    </ol>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="back2top">
+        <div class="back2top">
+            <a href="#" class="toplink">
+                Back to top
+            </a>
+        </div>
+    </section>
+    <section id="footer2">
+        <div id="footer2_main">
+            <p>Copyright &copy; 2020 Rohit Yelnare, Niranjan Belambe and Aakash Yadav</p> 
+        </div>
+    </section>
+    <script src="categories/category.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

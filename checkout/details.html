@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>GharBhejo Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="checkout/details.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><a href="index.html">GharBhejo</a></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="menu_icon" style="margin-top: 25px;"></div>
+                <div class="menu_icon"></div>
+                <div class="menu_icon"></div>
+            </label>
+        <ul class="list">
+        <li id="greetings" style="color: white; font-size: 1.15rem; font-weight: 700; font-style: italic; @media (max-width: 858px){color:red;}"></li>
+            <li><a href="index.html#categories" class="nav_item">CATEGORIES</a></li>
+            <li><a id="cartid" href="cart/cart.html" class="nav_item">CART</a></li>
+            <li><a href="signup/signup.html" class="nav_item" id="signup_btn">SIGN UP</a></li>
+            <li id="signout_btn" style="display: none;"><a onclick="signout()" class="nav_item">SIGN OUT</a></li>
+        </ul>
+    </nav>
+    <p id="header">Delivery Information and Contact Details</p><hr>
+    <div class="details">
+        <p>Please check your shipping address and contact details before proceeding.</p>
+        <table id="text">
+            <tr>
+                <td><p id="text">Name:</p></td>
+                <td><input class="info" type="text" id="name" disabled required></td>
+            </tr>
+            <tr>
+                <td><p id="text">Email Id:</p></td>
+                <td><input class="info" type="email" id="mail" disabled required></td>
+            </tr>
+            <tr>
+                <td><p id="text">Shipping address:</p></td>
+                <td>&nbsp;<textarea class="info" type="text" id="address" disabled required rows="3" style="margin: 0% 4%; resize:none;"></textarea></td>
+            </tr>
+            <tr>
+                <td><p id="text">Mobile Number:</p></td>
+                <td><input class="info" type="number" id="phone" disabled required></td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons">
+        <div class="button1">
+            <button id="edit" onclick="edit()">Edit</button>
+        </div>
+        <div class="button2">
+            <button id="next" onclick="next0()">Next</button>
+        </div>
+    </div>
+    
+</body>
+<script src="checkout/details.js"></script>
+<script src="index.js"></script>
+</html>
